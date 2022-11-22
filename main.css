@@ -1,0 +1,16 @@
+html{
+    font-size: 25px;
+}
+body{
+    background-color: grey;
+    color: black;
+}
+a{
+    color: black;
+}
+a:visited{
+    color: aqua;
+}
+a:hover, a:active{
+    color: burlywood;
+}
