@@ -17,6 +17,7 @@
         <ul>
           <li><a href="#html">Learning HTML</a></li>
           <li><a href="#vacation">Vacation Plan</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -154,6 +155,102 @@
             <dd>These are also hot.</dd>
           </dl>
         </section>
+      </article>
+      <article id="contact">
+        <h2>Contact Me!</h2>
+        <p>I really like to hear from you. Your feedback helps me to improve my skill.</p>
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Your Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Ashrav" autocomplete="on" required autofocus>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Pravin" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="edition">Edition:</label>
+                    <input type="number" name="edition" id="edition" min="2010" max="2021" step="1" value="2015">
+                </p>
+                <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Indian">
+                            <option value="regulor coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                            <option value="black coffee">Black Coffee</option>
+                            <option value="filter coffee">Filter Coffee</option>
+                        </optgroup>
+                        <optgroup label="American">
+                            <option value="cappuccino">Cappuccino</option>
+                            <option value="americano">Americano</option>                            
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="bakery">Cake</label>
+                    <input type="text" name="bakery" id="bakery" list="cake-list">
+                    <datalist id="cake-list">
+                        <option value="Cream Cake"></option>
+                        <option value="Iced Cake"></option>
+                        <option value="Black Forest"></option>
+                        <option value="White Forest"></option>
+                        <option value="Dark Chocolate"></option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Your Favorite Food</legend>
+                <p>
+                    <input type="radio" name="food" id="biriyani" value="biriyani">
+                    <label for="biriyani">Biriyani</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="friedrice" value="friedrice">
+                    <label for="friedrice">Fried Rice</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="meals" value="meals">
+                    <label for="meals">Meals</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pet?</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="fish" value="fish">
+                    <label for="fish">Fish</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a Note</legend>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your input here.."></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
       </article>
     </main>
     <hr>
